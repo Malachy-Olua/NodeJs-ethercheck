@@ -11,6 +11,10 @@ const main = async () => {
     console.log(block)
     const transferEvents = await contract.queryFilter('Transfer', block - 4, block)
     console.log(transferEvents)
+    //const transferEvents1 = await contract.filters.Transfer("0xced92fa7f0797cbc851b48140ae218a0b0d41ce0")
+    //const transferEvents2 = await contract.queryFilter(transferEvents1, block - 1000, block)
+    //console.log(transferEvents2)
+    
 }
 
 main()
